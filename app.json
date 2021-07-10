@@ -1,0 +1,83 @@
+{
+  "name": "TG-VCMusicRobot",
+  "logo": "https://telegra.ph/file/ab5f5ffc7bc05f47bfc11.jpg",
+  "description": "Open-Source Robot For Playing Music in TG Voice Chat. Made By [@UdayOP](https://telegram.me/UdayOP2312).",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/UdayBindal2312/TG-VCMusicRobot",
+  "stack": "container",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   }   
+  ],        
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram String Session",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Api Token Of Bot from [@BotFather](https://telegram.me/BotFather)",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot's Username without @",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Your MusicPlayer Bot Name.",
+      "required": false,
+      "value": ""
+    },
+    "SUPPORT_GROUP": {
+      "description": "Your MusicPlayer Support group without @ [Leave this Blank if you don't have one]",
+      "required": false,
+      "value": "HackerCodeX"
+    },
+    "PROJECT_NAME": {
+      "description": "Your MusicPlayer project Name.",
+      "required": false,
+      "value": "VC-MusicBot"
+    },
+    "ASSISTANT_NAME": {
+      "description": "Your MusicPlayer's Assistant Username without @.",
+      "required": true
+    },
+    "ARQ_API_KEY": {
+      "description": "Get from [@ARQRobot](https://telegram.me/ARQRobot).",
+      "required": false,
+      "value": "VKSSQH-SRNJYZ-MSOJAI-QALESR-ARQ"
+    },    
+    "BG_IMAGE": {
+      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "required": false,
+      "value": "https://telegra.ph/file/14fe462ed3673f9c9ac48.jpg"
+    },     
+    "UPDATES_CHANNEL": {
+      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "required": false,
+      "value": "MrTechCoder"
+    },    
+    "API_ID": {
+      "description": "App ID from my.telegram.org/apps",
+      "required": true
+    },
+    "PMPERMIT": {
+      "description": "Change To Turn Off",
+      "required": false,
+      "value": "ENABLE"
+    },    
+    "API_HASH": {
+      "description": "App hash from my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Max audio duration limit for downloads (minutes).",
+      "required": true,
+      "value": "20"
+    }
+  }
+}
